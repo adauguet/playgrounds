@@ -26,5 +26,5 @@ let fillLayer = CAShapeLayer()
 fillLayer.path = path.cgPath
 fillLayer.fillRule = kCAFillRuleEvenOdd
 fillLayer.fillColor = UIColor.white.cgColor
-fillLayer.opacity = 0.5
+fillLayer.opacity = 0.7
 background.layer.addSublayer(fillLayer)
