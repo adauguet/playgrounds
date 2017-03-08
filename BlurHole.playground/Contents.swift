@@ -32,6 +32,20 @@ layer.fillRule = kCAFillRuleEvenOdd
 layer.fillColor = UIColor.green.cgColor
 layer.path = outerRect.cgPath
 
+let vibrancy = UIVibrancyEffect(blurEffect: blur)
+let vibrancyView = UIVisualEffectView(effect: vibrancy)
+vibrancyView.frame = CGRect(x: 0.0, y: 0.0, width: 200.0, height: 500.0)
+
+let label = UILabel(frame: CGRect(x: 0.0, y: 0.0, width: 200.0, height: 400.0))
+label.text = "Hello world!"
+label.font = UIFont.boldSystemFont(ofSize: 16.0)
+label.backgroundColor = .clear
+label.textAlignment = .center
+
+vibrancyView.contentView.addSubview(label)
+
+blurView.contentView.addSubview(vibrancyView)
+
 mask.layer.addSublayer(layer)
 
 blurView.mask = mask
