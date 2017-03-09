@@ -30,7 +30,7 @@ UIView.animate(withDuration: 2.0, animations: { () -> Void in
     
     circle.transform = scaleTransform
     
-    let rotationTransform = CGAffineTransform(rotationAngle: 3.14)
+    let rotationTransform = CGAffineTransform(rotationAngle: CGFloat(M_PI))
     
     rectangle.transform = rotationTransform
 })
