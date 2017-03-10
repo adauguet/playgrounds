@@ -5,16 +5,16 @@ import CoreGraphics
 import PlaygroundSupport
 
 let frame = CGRect(x: 0, y: 0, width: 500, height: 500)
-let background = UIView(frame: frame)
-background.backgroundColor = .white
-PlaygroundPage.current.liveView = background
+let contentView = UIView(frame: frame)
+contentView.backgroundColor = .white
+PlaygroundPage.current.liveView = contentView
 
 
 let image = UIImage(named: "landscape.jpg")
 let imageView = UIImageView(frame: frame)
 imageView.image = image
 imageView.contentMode = .scaleAspectFill
-background.addSubview(imageView)
+contentView.addSubview(imageView)
 
 let radius: CGFloat = 40.0
 let path = UIBezierPath(roundedRect: frame, cornerRadius: 0)
@@ -27,4 +27,4 @@ fillLayer.path = path.cgPath
 fillLayer.fillRule = kCAFillRuleEvenOdd
 fillLayer.fillColor = UIColor.white.cgColor
 fillLayer.opacity = 0.7
-background.layer.addSublayer(fillLayer)
+contentView.layer.addSublayer(fillLayer)

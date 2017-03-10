@@ -1,15 +1,6 @@
 import UIKit
 import PlaygroundSupport
 
-extension CGRect {
-    init(center: CGPoint, size: CGSize) {
-        let originX = center.x - size.width / 2
-        let originY = center.y - size.height / 2
-        self.origin = CGPoint(x: originX, y: originY)
-        self.size = size
-    }
-}
-
 let center = CGPoint(x: 100.0, y: 100.0)
 
 let contentView = UIView(frame: CGRect(center: center, size: CGSize(width: 500.0, height: 500.0)))
