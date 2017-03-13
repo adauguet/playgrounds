@@ -48,7 +48,8 @@ blurView.contentView.addSubview(vibrancyView)
 
 mask.layer.addSublayer(layer)
 
-blurView.mask = mask
 
 view.addSubview(imageView)
 view.addSubview(blurView)
+
+blurView.mask = mask
