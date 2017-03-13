@@ -17,13 +17,12 @@ let blurView = UIVisualEffectView(effect: blur)
 blurView.frame = contentRect
 
 let path = UIBezierPath(rect: contentRect)
-let circleRect = CGRect(center: CGPoint(x: 200, y: 200), size: CGSize(width: 200, height: 200))
-let circle = UIBezierPath(ovalIn: circleRect)
+let circle = UIBezierPath(ovalIn: CGRect(x: 50, y: 50, width: 300, height: 300))
 path.append(circle)
 path.usesEvenOddFillRule = true
 
 let toPath = UIBezierPath(rect: contentRect)
-let toCircleRect = CGRect(center: CGPoint(x: 200, y: 200), size: CGSize(width: 50, height: 50))
+let toCircleRect = CGRect(x: 150, y: 150, width: 100, height: 100)
 let toCircle = UIBezierPath(ovalIn: toCircleRect)
 toPath.append(toCircle)
 toPath.usesEvenOddFillRule = true
@@ -35,15 +34,13 @@ hole.fillRule = kCAFillRuleEvenOdd
 
 let mask = UIView(frame: contentRect)
 
-
-
 contentView.addSubview(imageView)
 
 contentView.addSubview(blurView)
 
-blurView.layer.mask = hole
+mask.layer.addSublayer(hole)
 
-
+blurView.mask = mask
 
 let animation = CABasicAnimation(keyPath: "path")
 animation.fromValue = hole.path
