@@ -19,12 +19,12 @@ contentView.backgroundColor = .white
 
 PlaygroundPage.current.liveView = contentView
 
-let maskLayer = CAShapeLayer()
-maskLayer.path = path.cgPath
-maskLayer.fillRule = kCAFillRuleEvenOdd
-maskLayer.fillColor = UIColor.black.cgColor
+let layer = CAShapeLayer()
+layer.path = path.cgPath
+layer.fillRule = kCAFillRuleEvenOdd
+layer.fillColor = UIColor.black.cgColor
 
-contentView.layer.addSublayer(maskLayer)
+contentView.layer.addSublayer(layer)
 
 let toPath = UIBezierPath(rect: pathRect)
 let toCircleFrame = CGRect(center: center, size: CGSize(width: 2 * sqrt(2) * 200.0, height: 2 * sqrt(2) * 200.0))
@@ -36,9 +36,9 @@ animation.fromValue = path.cgPath
 animation.toValue = toPath.cgPath
 animation.duration = 5
 animation.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseIn)
-maskLayer.add(animation, forKey: nil)
+layer.add(animation, forKey: nil)
 
 CATransaction.begin()
 CATransaction.disableActions()
-maskLayer.path = toPath.cgPath
+layer.path = toPath.cgPath
 CATransaction.commit()

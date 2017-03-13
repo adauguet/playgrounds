@@ -39,32 +39,20 @@ let mask = UIView(frame: contentRect)
 
 contentView.addSubview(imageView)
 
-let blurViewLayer = blurView.layer
-contentView.layer.addSublayer(blurViewLayer)
-blurView.layer.sublayers?.forEach { layer in
-    contentView.layer.addSublayer(layer)
-}
+contentView.addSubview(blurView)
 
-contentView.layer.sublayers?.count
-
-//contentView.addSubview(blurView)
-//
-//mask.layer.addSublayer(hole)
-//
-//blurView.mask = mask
+blurView.layer.mask = hole
 
 
 
+let animation = CABasicAnimation(keyPath: "path")
+animation.fromValue = hole.path
+animation.toValue = toPath.cgPath
+animation.duration = 2
+animation.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseIn)
+hole.add(animation, forKey: nil)
 
-
-//let animation = CABasicAnimation(keyPath: "path")
-//animation.fromValue = layer.path
-//animation.toValue = toPath.cgPath
-//animation.duration = 5
-//animation.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseIn)
-//layer.add(animation, forKey: nil)
-
-//CATransaction.begin()
-//CATransaction.disableActions()
-//layer.path = toPath.cgPath
-//CATransaction.commit()
+CATransaction.begin()
+CATransaction.disableActions()
+hole.path = toPath.cgPath
+CATransaction.commit()
