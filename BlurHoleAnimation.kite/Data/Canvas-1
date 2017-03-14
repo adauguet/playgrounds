@@ -1,0 +1,147 @@
+{
+  "bounds" : "{{0, 0}, {900, 600}}",
+  "position" : "{0, 0}",
+  "className" : "JRShapeContainerLayer",
+  "sublayers" : [
+    {
+      "bounds" : "{{0, 0}, {1440, 901}}",
+      "position" : "{0, 0}",
+      "className" : "CALayer",
+      "sublayers" : [
+        {
+          "bounds" : "{{0, 0}, {1440, 900}}",
+          "position" : "{0, 0}",
+          "contentImage" : {
+            "className" : "JRContentImage",
+            "contentIdentifier" : "landscape-pics-17-2.png"
+          },
+          "className" : "CALayer",
+          "shadowColor" : {
+            "components" : {
+              "r" : 0,
+              "b" : 0,
+              "g" : 0,
+              "a" : 1
+            },
+            "colorSpace" : "kCGColorSpaceSRGB"
+          },
+          "uuid" : "FF484592-DF5D-47E1-A2E2-9A442BCE9A5D",
+          "borderColor" : {
+            "components" : {
+              "r" : 0,
+              "b" : 0,
+              "g" : 0,
+              "a" : 1
+            },
+            "colorSpace" : "kCGColorSpaceSRGB"
+          },
+          "duration" : 3600,
+          "contentsGravity" : "center",
+          "name" : "landscape-pics-17-2"
+        },
+        {
+          "uuid" : "C0BDEA4F-4138-4992-AE9A-9329F0444F6F",
+          "borderColor" : {
+            "components" : {
+              "r" : 0,
+              "b" : 0,
+              "g" : 0,
+              "a" : 1
+            },
+            "colorSpace" : "kCGColorSpaceSRGB"
+          },
+          "name" : "fromPath",
+          "animationsContainer" : {
+            "animations" : [
+              {
+                "fromValue" : {
+                  "type" : "CGPathRef",
+                  "value" : "M0.000,0.000 L1440.000,0.000 L1440.000,900.000 L0.000,900.000 L0.000,0.000 Z M720.000,600.000 C802.843,600.000 870.000,532.843 870.000,450.000 C870.000,367.157 802.843,300.000 720.000,300.000 C637.157,300.000 570.000,367.157 570.000,450.000 C570.000,532.843 637.157,600.000 720.000,600.000 Z M1033.000,64.000 L1033.000,-92.000"
+                },
+                "beginTime" : 1e-06,
+                "className" : "CABasicAnimation",
+                "keyPath" : "path",
+                "fillMode" : "forwards",
+                "uuid" : "9EBE4B1D-5802-48B5-9B66-202F207043E6",
+                "duration" : 6.000012000000007,
+                "autoreverses" : true,
+                "timingFunction" : {
+                  "c2x" : 0.58,
+                  "c2y" : 1,
+                  "className" : "CAMediaTimingFunction",
+                  "c1x" : 0.42,
+                  "c1y" : 0
+                },
+                "toValue" : {
+                  "type" : "CGPathRef",
+                  "value" : "M0.000,0.000 L1440.000,0.000 L1440.000,900.000 L0.000,900.000 L0.000,0.000 Z M720.000,700.000 C858.071,700.000 970.000,588.071 970.000,450.000 C970.000,311.929 858.071,200.000 720.000,200.000 C581.929,200.000 470.000,311.929 470.000,450.000 C470.000,588.071 581.929,700.000 720.000,700.000 Z M720.000,700.000"
+                },
+                "removedOnCompletion" : false
+              }
+            ]
+          },
+          "position" : "{0, 0}",
+          "lineWidth" : 0,
+          "className" : "CAShapeLayer",
+          "strokeColor" : {
+            "components" : {
+              "r" : 0,
+              "b" : 0,
+              "g" : 0,
+              "a" : 0
+            },
+            "colorSpace" : "kCGColorSpaceSRGB"
+          },
+          "path" : "M0.000,0.000 L1440.000,0.000 L1440.000,900.000 L0.000,900.000 L0.000,0.000 Z M720.000,600.000 C802.843,600.000 870.000,532.843 870.000,450.000 C870.000,367.157 802.843,300.000 720.000,300.000 C637.157,300.000 570.000,367.157 570.000,450.000 C570.000,532.843 637.157,600.000 720.000,600.000 Z M1033.000,64.000 L1033.000,-92.000",
+          "fillRule" : "even-odd",
+          "shadowColor" : {
+            "components" : {
+              "r" : 0,
+              "b" : 0,
+              "g" : 0,
+              "a" : 1
+            },
+            "colorSpace" : "kCGColorSpaceSRGB"
+          },
+          "fillColor" : {
+            "components" : {
+              "r" : 0.847,
+              "b" : 0.847,
+              "g" : 0.847,
+              "a" : 0.3
+            },
+            "colorSpace" : "kCGColorSpaceSRGB"
+          },
+          "duration" : 3600,
+          "bounds" : "{{0, 0}, {1439.9999999999991, 900.00000000000023}}",
+          "contentsGravity" : "center"
+        }
+      ],
+      "shadowColor" : {
+        "components" : {
+          "r" : 0,
+          "b" : 0,
+          "g" : 0,
+          "a" : 1
+        },
+        "colorSpace" : "kCGColorSpaceSRGB"
+      },
+      "uuid" : "C05A1CF5-D843-4C08-87BD-4D5F1D2DA3F6",
+      "borderColor" : {
+        "components" : {
+          "r" : 0,
+          "b" : 0,
+          "g" : 0,
+          "a" : 1
+        },
+        "colorSpace" : "kCGColorSpaceSRGB"
+      },
+      "anchorPoint" : "{0, 0}",
+      "duration" : 3600,
+      "contentsGravity" : "center",
+      "name" : "Page 1"
+    }
+  ],
+  "uuid" : "766B7BA5-59BC-4D75-ADC3-BD13444ADAFE",
+  "name" : "Background Layer"
+}
